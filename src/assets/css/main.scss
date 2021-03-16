@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+@font-face {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+$font-grey: #858585;
+$font-darkgrey: #606266;
+$font-black: #000;
+$font-blue: #0eb3ff;
+$font-red: #ef3b42;
+$font-green: #67c23a;
+$background-gray: #f1f1f1;
+$background-blue: #daf3ff;
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-regular {
+  font-weight: normal;
+}
+
+.font-grey {
+  color: $font-grey;
+}
+
+.font-darkgrey {
+  color: $font-darkgrey;
+}
+
+.font-black {
+  color: $font-black;
+}
+
+.font-blue {
+  color: $font-blue;
+}
+
+.font-red {
+  color: $font-red;
+}
+
+.font-green {
+  color: $font-green;
+}
+
+.background-gray {
+  background: $background-gray;
+}
+
+.background-info {
+  background: $background-blue;
+}
+
+.centered-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.notshow {
+  visibility: hidden;
+}
+
+.blu i {
+  font-style: normal;
+}
