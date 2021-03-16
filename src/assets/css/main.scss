@@ -53,6 +53,10 @@ $background-blue: #daf3ff;
   background: $background-blue;
 }
 
+.background-blue {
+  background: $font-blue;
+}
+
 .centered-page {
   width: 100%;
   max-width: 1200px;

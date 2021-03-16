@@ -22,7 +22,7 @@ export default {
   methods: {
     async getProfile () {
       try {
-        const response = await profileApi.fethProfile()
+        const response = await profileApi.fetchProfile()
         this.profile = response.data
       } catch (error) {
         console.log(error)
