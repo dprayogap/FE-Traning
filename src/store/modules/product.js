@@ -1,7 +1,14 @@
 import productApi from '@/api/product'
 
 const state = {
-  products: []
+  products: [],
+  productCreation: {
+    imgUrl: '',
+    name: '',
+    originalPrice: null,
+    finalPrice: null,
+    available: false
+  }
 }
 
 const getters = {
@@ -11,6 +18,9 @@ const getters = {
 const mutations = {
   SET_PRODUCTS: (state, data) => {
     state.products = data
+  },
+  SET_PRODUCT_CREATION: (state, data) => {
+    state.productCreation = data
   }
 }
 
@@ -37,6 +47,10 @@ const actions = {
   async deleteProduct ({ commit }, { code, payload }) {
     const response = await productApi.deleteProduct(code, payload)
     return response
+  },
+
+  updateProductCreation ({ commit }, object) {
+    commit('SET_PRODUCT_CREATION', object)
   }
 }
 
