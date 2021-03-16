@@ -2,7 +2,9 @@
   <div class="app-header background-blue">
     <div class="app-header__container">
       <div class="app-header__logo">
-        <img src="https://www.static-src.com/frontend/static/img/logo-blibli-white.f8255fc.svg">
+        <router-link to="/home">
+          <img src="https://www.static-src.com/frontend/static/img/logo-blibli-white.f8255fc.svg">
+        </router-link>
       </div>
 
       <div class="app-header__search-frame">
@@ -46,7 +48,6 @@
 <script>
 export default {
   name: 'AppHeader',
-
   data () {
     return {
       searchVal: ''
